@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Login_Activity" android:background="@color/md_grey_900">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp" app:srcCompat="@drawable/login_bienvenida2"
+                android:id="@+id/Logo_Bienvenida"
+                android:contentDescription="@string/Logo" android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_margin="20dp" style="@style/Inputs">
+
+            <EditText
+                    android:theme="@style/Inputs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/Txt_Usuario" android:layout_weight="1" android:hint="@string/usuario"
+                    android:autofillHints="" android:backgroundTint="@color/md_grey_600"
+                    android:textColor="@color/md_white_1000" android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:passwordToggleTint="@color/md_grey_600"
+                android:layout_margin="20dp" android:theme="@style/Inputs" app:passwordToggleEnabled="true">
+
+            <EditText
+                    android:theme="@style/Inputs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/Txt_Password" android:layout_weight="1" android:hint="@string/contrase_a"
+                    android:autofillHints="" android:backgroundTint="@color/md_grey_600"
+                    android:textColor="@color/md_white_1000" android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+                android:text="@string/ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Btn_Ingresar" android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp" android:layout_marginBottom="10dp" android:layout_marginTop="10dp"
+                android:background="@drawable/button_blue" android:textSize="24sp"
+                android:textColor="@color/md_white_1000" android:fontFamily="sans-serif"/>
+        <Button
+                android:text="@string/registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Btn_Registrar" android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp" android:layout_marginBottom="10dp" android:layout_marginTop="10dp"
+                android:textColor="@color/md_white_1000" android:background="@drawable/button_orange"
+                android:textSize="24sp" android:fontFamily="sans-serif"/>
+        <TextView
+                android:text="@string/olvido_su_contrase_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Forgot" android:textSize="18sp"
+                android:textAlignment="center" android:textColor="@color/md_grey_300" android:gravity="center"
+                android:fontFamily="sans-serif-light" android:layout_margin="3dp"/>
+    </LinearLayout>
+</ScrollView>
