@@ -16,9 +16,9 @@
         </activity>
         <activity android:name=".Forgot_Activity">
         </activity>
-        <activity android:name=".Actividad_Main">
+        <activity android:name=".Actividad_Main" android:label="Menu">
         </activity>
-        <activity android:name=".Register_Activity" android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Register_Activity" android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".Login_Activity" android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>

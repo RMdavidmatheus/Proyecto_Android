@@ -11,6 +11,10 @@ class Login_Activity : AppCompatActivity() {
         startActivity(Intent(this, Register_Activity::class.java))
     }
 
+    fun Provisional(view: View){
+        startActivity(Intent(this, Actividad_Main::class.java))
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_)

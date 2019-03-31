@@ -48,6 +48,7 @@
                     android:textColor="@color/md_white_1000" android:textSize="20sp"/>
         </android.support.design.widget.TextInputLayout>
         <Button
+                android:onClick="Provisional"
                 android:text="@string/ingresar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/Btn_Ingresar" android:layout_marginStart="30dp"
