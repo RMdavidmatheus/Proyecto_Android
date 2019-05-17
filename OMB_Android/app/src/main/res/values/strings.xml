@@ -24,4 +24,19 @@
     <string name="acerca_de_nosotros">Acerca de nosotros</string>
     <string name="contactenos">Contactenos</string>
     <string name="bienvenido_al_menu_principal">Bienvenido al menu principal</string>
+    <string name="Imagen_Forgot">Imagen_Principal_Forgot</string>
+    <string name="recuperar">RECUPERAR</string>
+    <string name="imagen_principal">Imagen principal</string>
+    <string name="Twitter_flt">Twitter</string>
+    <string name="Fan_page_ftb">Fan page</string>
+    <string name="Instagram">Instagram</string>
+    <string name="Web">Pagina web</string>
+    <string name="descripcion_btn_close_popup_login">Boton para cerrar</string>
+    <string name="titulo_popup_login">Iniciando sesión...</string>
+    <string name="credenciales_correctas">Credenciales correctas</string>
+    <string name="error_login">Error al ingresar</string>
+    <string name="error_text_login">Error de autentificación, por favor verifique que su usuario o contraseña sean
+        correctos
+    </string>
+    <string name="Error_salir">Salir</string>
 </resources>

@@ -7,10 +7,22 @@
         <item name="colorPrimaryDark">@color/md_grey_800</item>
         <item name="colorAccent">@color/md_blue_900</item>
     </style>
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+
+    <!-- Estilo del label del floating -->
+    <style name="Label_theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@drawable/style_label_back</item>
+        <item name="android:textColor">@color/md_white_1000</item>
     </style>
+
+    <!-- Estilo sin status bar -->
+    <style name="No_barra_titulo" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/md_grey_300</item>
+        <item name="colorPrimaryDark">@color/md_grey_300</item>
+        <item name="android:navigationBarColor">@color/md_grey_action_bar</item>
+        <item name="android:statusBarColor">@color/md_grey_action_bar</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
@@ -21,5 +33,23 @@
         <item name="colorAccent">@color/md_white_1000</item>
         <item name="android:textColorHint">@color/md_grey_600</item>
     </style>
+
+    <!-- Estilo para inputs del login -->
+    <style name="Inputs_style_2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_grey_600</item>
+        <item name="colorPrimaryDark">@color/md_grey_600</item>
+        <item name="colorAccent">@color/md_grey_800</item>
+        <item name="android:textColorHint">@color/md_grey_600</item>
+    </style>
+
+    <!-- Estilo para el progressbar del login -->
+    <style name="Tema_progress_bar_login">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_black_1000</item>
+        <item name="colorPrimaryDark">@color/md_grey_800</item>
+        <item name="colorAccent">@color/md_green_200</item>
+    </style>
+
 
 </resources>

@@ -6,65 +6,120 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Actividad_Main" android:background="@color/md_grey_900">
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <ImageView
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="300dp" app:srcCompat="@drawable/blanco_logo"
-                android:id="@+id/Logo" android:layout_margin="20dp"/>
-        <TextView
-                android:text="@string/bienvenido_al_menu_principal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/Bienvenida_Ttl" android:layout_margin="5dp"
-                android:textAlignment="center" android:textSize="30sp" android:textColor="@color/md_white_1000"
-                android:fontFamily="sans-serif-light"/>
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" app:srcCompat="@drawable/blanco_logo"
+                    android:id="@+id/Logo" android:layout_margin="20dp" android:contentDescription="@string/imagen_principal"/>
+            <TextView
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/bienvenido_al_menu_principal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/Bienvenida_Ttl"
+                    android:textAlignment="center" android:textSize="30sp" android:textColor="@color/md_white_1000"
+                    android:fontFamily="sans-serif-thin"/>
+            <Button
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/md_blue_900"
+                    android:background="@drawable/btn_anim_stroke_blue"
+                    android:text="Gestion de productos"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"/>
 
-        <com.airbnb.lottie.LottieAnimationView
+            <Button
+                    android:background="@drawable/btn_anim_stroke_orange"
+                    android:textColor="@color/md_orange_700"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="Contactos"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
 
-                app:lottie_loop="true"
-                app:lottie_autoPlay="true"
-                app:lottie_imageAssetsFolder="assets"
-                app:lottie_fileName="72-favourite-app-icon.json"
-                android:id="@+id/Animacion_Mundo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" android:layout_gravity="center" android:layout_margin="20dp"/>
-
-    </LinearLayout>
+            <Button
+                    android:background="@drawable/btn_anim_stroke_green"
+                    android:textColor="@color/md_green_btn"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="Agenda"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
 
     <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
 
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/Float_Menu"
+                app:fab_labelStyle="@style/Label_theme"
+                app:fab_addButtonColorPressed="@color/md_orange_800"
+                app:fab_addButtonColorNormal="@color/md_orange_900"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        <com.github.clans.fab.FloatingActionMenu
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:menu_colorNormal="@color/md_orange_900"
-                app:menu_colorPressed="@color/md_orange_800">
-
-            <com.github.clans.fab.FloatingActionButton
-                    android:id="@+id/Fl_Facebook"
-                    app:fab_size="normal"
-                    app:maxImageSize="32dp"
-                    android:src="@drawable/icn_face_32"
-                    app:fab_label="Facebook page"
-                    app:fab_colorNormal="@color/md_light_blue_900"
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/Float_Facebook"
+                    app:fab_size="mini"
+                    app:fab_icon="@drawable/icn_fanpage"
+                    app:fab_title="@string/Fan_page_ftb"
                     app:fab_colorPressed="@color/md_light_blue_800"
+                    app:fab_colorNormal="@color/md_light_blue_900"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
-            <com.github.clans.fab.FloatingActionButton
-                    android:id="@+id/Fl_Twitter"
-                    app:fab_size="normal"
-                    app:maxImageSize="32dp"
-                    android:src="@drawable/icn_twitter"
-                    app:fab_label="Twitter"
-                    app:fab_colorNormal="@color/md_light_blue_500"
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/Float_Twitter"
+                    app:fab_size="mini"
+                    app:fab_icon="@drawable/icn_tw"
+                    app:fab_title="@string/Twitter_flt"
                     app:fab_colorPressed="@color/md_light_blue_300"
+                    app:fab_colorNormal="@color/md_light_blue_500"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
-        </com.github.clans.fab.FloatingActionMenu>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/Float_Insta"
+                    app:fab_size="mini"
+                    app:fab_icon="@drawable/insta_icn"
+                    app:fab_title="@string/Instagram"
+                    app:fab_colorPressed="@color/md_purple_300"
+                    app:fab_colorNormal="@color/md_purple_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/Float_Web"
+                    app:fab_size="mini"
+                    app:fab_icon="@drawable/icn_web"
+                    app:fab_title="@string/Web"
+                    app:fab_colorPressed="@color/md_green_700"
+                    app:fab_colorNormal="@color/md_green_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
     </RelativeLayout>
 

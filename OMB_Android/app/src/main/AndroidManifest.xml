@@ -16,11 +16,12 @@
         </activity>
         <activity android:name=".Forgot_Activity">
         </activity>
-        <activity android:name=".Actividad_Main" android:label="Menu">
+        <activity android:name=".Actividad_Main" android:theme="@style/No_barra_titulo">
         </activity>
-        <activity android:name=".Register_Activity" android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Register_Activity" android:theme="@style/No_barra_titulo">
         </activity>
-        <activity android:name=".Login_Activity" android:theme="@style/Theme.AppCompat.NoActionBar">
+        <!-- Actividad Main -->
+        <activity android:name=".Login_Activity" android:theme="@style/No_barra_titulo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
