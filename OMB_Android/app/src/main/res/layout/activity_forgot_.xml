@@ -15,7 +15,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp" app:srcCompat="@drawable/forgot_icn" android:id="@+id/Imagen_Forgot"
                 android:layout_margin="20dp" android:contentDescription="@string/Imagen_Forgot"/>
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
                 android:theme="@style/Inputs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:layout_marginBottom="5dp" android:layout_marginTop="5dp"
@@ -29,8 +29,8 @@
                     android:id="@+id/Txt_Email_Forgot" android:layout_weight="1"
                     android:textColor="@color/md_white_1000" android:hint="@string/email"
                     android:backgroundTint="@color/md_grey_600" android:autofillHints=""/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
                 android:theme="@style/Inputs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:layout_marginEnd="20dp" android:layout_marginStart="20dp"
@@ -44,7 +44,7 @@
                     android:id="@+id/Txt_Tel_Forgot" android:layout_weight="1"
                     android:textColor="@color/md_white_1000" android:hint="@string/telefono"
                     android:backgroundTint="@color/md_grey_600" android:autofillHints=""/>
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
                 android:text="@string/recuperar"
                 android:layout_width="match_parent"

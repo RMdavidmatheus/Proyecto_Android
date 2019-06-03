@@ -13,9 +13,24 @@
             android:layout_height="wrap_content">
         <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="170dp" app:srcCompat="@drawable/person" android:id="@+id/imageView2"
+                android:layout_height="170dp" app:srcCompat="@drawable/person" android:id="@+id/Imagen_reg"
                 android:layout_margin="5dp" android:contentDescription="@string/Descripcion_2"/>
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
+                android:theme="@style/Inputs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp" android:layout_marginTop="5dp">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/Txt_Documento" android:layout_weight="1" android:hint="@string/documento"
+                    android:autofillHints="" android:backgroundTint="@color/md_grey_600"
+                    android:textColor="@color/md_white_1000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
                 android:theme="@style/Inputs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
@@ -29,8 +44,8 @@
                     android:id="@+id/Txt_Nombres" android:layout_weight="1" android:hint="@string/nombres"
                     android:autofillHints="" android:backgroundTint="@color/md_grey_600"
                     android:textColor="@color/md_white_1000"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
                 android:theme="@style/Inputs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
@@ -44,8 +59,8 @@
                     android:id="@+id/Txt_Apellidos" android:layout_weight="1" android:hint="@string/apellidos"
                     android:autofillHints="" android:backgroundTint="@color/md_grey_600"
                     android:textColor="@color/md_white_1000"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
                 android:theme="@style/Inputs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
@@ -59,8 +74,8 @@
                     android:id="@+id/Txt_Tel" android:layout_weight="1" android:hint="@string/telefono"
                     android:autofillHints="" android:backgroundTint="@color/md_grey_600"
                     android:textColor="@color/md_white_1000"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
                 android:theme="@style/Inputs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
@@ -74,8 +89,8 @@
                     android:id="@+id/Txt_Email" android:layout_weight="1" android:hint="@string/email"
                     android:autofillHints="" android:backgroundTint="@color/md_grey_600"
                     android:textColor="@color/md_white_1000"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
                 app:passwordToggleTint="@color/md_grey_600"
                 android:theme="@style/Inputs"
                 app:passwordToggleEnabled="true"
@@ -91,8 +106,8 @@
                     android:id="@+id/Txt_Pass" android:layout_weight="1" android:hint="@string/contrase_a"
                     android:autofillHints="" android:backgroundTint="@color/md_grey_600"
                     android:textColor="@color/md_white_1000"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
                 android:theme="@style/Inputs"
                 app:passwordToggleTint="@color/md_grey_600"
                 app:passwordToggleEnabled="true"
@@ -109,7 +124,7 @@
                     android:hint="@string/confirmar_contrase_a"
                     android:autofillHints="" android:backgroundTint="@color/md_grey_600"
                     android:textColor="@color/md_white_1000"/>
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
                 android:text="@string/registrarse"
                 android:layout_width="match_parent"

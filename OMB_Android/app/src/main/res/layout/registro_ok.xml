@@ -13,7 +13,7 @@
             android:layout_marginTop="7dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/icn_close" android:id="@+id/Btn_close_popup_login"
+            app:srcCompat="@drawable/icn_close" android:id="@+id/Btn_close_popup_reg"
             android:contentDescription="@string/descripcion_btn_close_popup_login"/>
 
     <androidx.cardview.widget.CardView
@@ -43,16 +43,16 @@
                         android:textAlignment="center"
                         android:layout_marginEnd="20dp"
                         android:layout_marginStart="20dp"
-                        android:text="@string/titulo_popup_login"
+                        android:text="@string/registrandose"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Titulo_popup_login"/>
+                        android:layout_height="wrap_content" android:id="@+id/Titulo_popup_reg_ok"/>
                 <com.airbnb.lottie.LottieAnimationView
                         android:visibility="visible"
                         app:lottie_autoPlay="true"
-                        android:id="@+id/Animacion_lottie"
+                        android:id="@+id/Animacion_lottie_reg"
                         app:lottie_imageAssetsFolder="assets"
                         app:lottie_fileName="519-load-complete.json"
-                        app:lottie_loop="true"
+                        app:lottie_loop="false"
                         android:layout_width="match_parent"
                         android:layout_height="210dp"/>
                 <TextView
@@ -64,9 +64,9 @@
                         android:textColor="@color/md_white_1000"
                         android:fontFamily="sans-serif-light"
                         android:textAlignment="center"
-                        android:text="@string/credenciales_correctas"
+                        android:text="@string/registro_completado_correctamente"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Texto_oculto_popup_login_correcto"/>
+                        android:layout_height="wrap_content" android:id="@+id/Texto_oculto_reg_correcto"/>
                 <Button
                         android:visibility="visible"
                         android:background="@drawable/btn_green_anim"
@@ -75,9 +75,9 @@
                         android:layout_marginEnd="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="15dp"
-                        android:text="@string/ingresar"
+                        android:text="@string/correcto"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Btn_continuar_ok"/>
+                        android:layout_height="wrap_content" android:id="@+id/Btn_ok"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

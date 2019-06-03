@@ -17,7 +17,7 @@
 
     <!-- Estilo sin status bar -->
     <style name="No_barra_titulo" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/md_grey_300</item>
+        <item name="colorPrimary">@color/md_grey_action_bar</item>
         <item name="colorPrimaryDark">@color/md_grey_300</item>
         <item name="android:navigationBarColor">@color/md_grey_action_bar</item>
         <item name="android:statusBarColor">@color/md_grey_action_bar</item>
@@ -28,9 +28,9 @@
 
     <style name="Inputs" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/md_white_1000</item>
-        <item name="colorPrimaryDark">@color/md_white_1000</item>
-        <item name="colorAccent">@color/md_white_1000</item>
+        <item name="colorPrimary">@color/md_grey_700</item>
+        <item name="colorPrimaryDark">@color/md_grey_700</item>
+        <item name="colorAccent">@color/md_grey_700</item>
         <item name="android:textColorHint">@color/md_grey_600</item>
     </style>
 
@@ -49,6 +49,10 @@
         <item name="colorPrimary">@color/md_black_1000</item>
         <item name="colorPrimaryDark">@color/md_grey_800</item>
         <item name="colorAccent">@color/md_green_200</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 

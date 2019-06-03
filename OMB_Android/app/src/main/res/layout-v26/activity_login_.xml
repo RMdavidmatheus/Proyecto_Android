@@ -17,13 +17,14 @@
                 android:id="@+id/Logo_Bienvenida"
                 android:contentDescription="@string/Logo" android:layout_marginTop="20dp"
                 android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
                 android:background="@drawable/inputs_style_2"
                 android:theme="@style/Inputs"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" android:layout_margin="20dp" style="@style/Inputs_style_2">
 
                 <EditText
+                        android:fontFamily="sans-serif"
                         android:layout_marginBottom="5dp"
                         android:drawablePadding="10dp"
                         android:drawableStart="@drawable/icn_user"
@@ -35,14 +36,15 @@
                         android:id="@+id/Txt_Usuario" android:layout_weight="1" android:hint="@string/usuario"
                         android:autofillHints="" android:backgroundTint="@color/md_white_1000"
                         android:textColor="@color/md_black_1000" android:textSize="18sp"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
                 android:background="@drawable/inputs_style_2"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" app:passwordToggleTint="@color/md_grey_600"
                 android:layout_margin="20dp" android:theme="@style/Inputs_style_2" app:passwordToggleEnabled="true">
 
             <EditText
+                    android:fontFamily="sans-serif"
                     android:layout_marginBottom="5dp"
                     android:drawablePadding="10dp"
                     android:drawableStart="@drawable/icn_lock_3"
@@ -54,25 +56,25 @@
                     android:id="@+id/Txt_Password" android:layout_weight="1" android:hint="@string/contrase_a"
                     android:autofillHints="" android:backgroundTint="@color/md_white_1000"
                     android:textColor="@color/md_black_1000" android:textSize="18sp"/>
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
-                android:onClick="Abriendo_pop_up"
+                android:onClick="Iniciar_sesion"
                 android:text="@string/ingresar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/Btn_Ingresar" android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp" android:layout_marginBottom="15dp" android:layout_marginTop="15dp"
                 android:background="@drawable/button_blue" android:textSize="24sp"
-                android:textColor="@color/md_white_1000" android:fontFamily="sans-serif"/>
+                android:textColor="@color/md_white_1000" android:fontFamily="sans-serif-medium"/>
         <Button
-                android:onClick="Formulario_Registrar"
+                android:onClick="Formulario_registro"
                 android:text="@string/registrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/Btn_Registrar" android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp" android:layout_marginBottom="15dp" android:layout_marginTop="15dp"
                 android:textColor="@color/md_white_1000" android:background="@drawable/button_orange"
-                android:textSize="24sp" android:fontFamily="sans-serif"/>
+                android:textSize="24sp" android:fontFamily="sans-serif-medium"/>
         <TextView
-                android:onClick="Abriendo_error"
+                android:onClick="Formulario_forgot"
                 android:text="@string/olvido_su_contrase_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/Forgot" android:textSize="18sp"

@@ -39,4 +39,18 @@
         correctos
     </string>
     <string name="Error_salir">Salir</string>
+    <string name="title_activity_contenido_base_datos">Contenido_base_datos</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="Gestion_label">Gestion de productos</string>
+    <string name="documento">Documento</string>
+    <string name="help">Ayuda</string>
+    <string name="registrandose">Registrandose...</string>
+    <string name="correcto">Siguiente</string>
+    <string name="registro_completado_correctamente">Registro completado satisfactoriamente</string>
 </resources>
