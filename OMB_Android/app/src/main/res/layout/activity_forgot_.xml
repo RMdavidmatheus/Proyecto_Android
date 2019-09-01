@@ -24,6 +24,21 @@
             <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/Txt_doc_forgot" android:layout_weight="1"
+                    android:textColor="@color/md_white_1000" android:hint="@string/documento"
+                    android:backgroundTint="@color/md_grey_600" android:autofillHints=""/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:theme="@style/Inputs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginBottom="5dp" android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:ems="10"
                     android:id="@+id/Txt_Email_Forgot" android:layout_weight="1"
@@ -52,5 +67,24 @@
                 android:layout_marginTop="10dp" android:layout_marginEnd="20dp" android:layout_marginStart="20dp"
                 android:background="@drawable/button_orange" android:textColor="@color/md_white_1000"
                 android:textSize="24sp" android:fontFamily="sans-serif"/>
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                    app:fab_labelStyle="@style/Label_theme"
+                    app:fab_addButtonColorPressed="@color/md_cyan_800"
+                    app:fab_addButtonColorNormal="@color/md_cyan_900"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                        app:fab_title="@string/help"
+                        app:fab_size="mini"
+                        app:fab_icon="@drawable/ic_help_black_24dp"
+                        app:fab_colorNormal="@color/md_teal_500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

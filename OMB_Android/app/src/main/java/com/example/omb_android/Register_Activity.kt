@@ -42,6 +42,9 @@ class Register_Activity : AppCompatActivity() {
     private lateinit var layout_txt_email:TextInputLayout
     private lateinit var layout_txt_pass1:TextInputLayout
     private lateinit var layout_txt_pass2:TextInputLayout
+    private lateinit var error_registrar:Dialog
+    private lateinit var btn_popup_close:ImageView
+    private lateinit var btn_volver:Button
 
     private fun Mostrar_popup_correcto_reg(){
         Pop_up_reg_ok.setContentView(R.layout.registro_ok)
@@ -51,6 +54,16 @@ class Register_Activity : AppCompatActivity() {
         Btn_popup_reg_ok.setOnClickListener(View.OnClickListener { startActivity(Intent(this,Login_Activity::class.java)) })
         Pop_up_reg_ok.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         Pop_up_reg_ok.show()
+    }
+
+    private fun Mostrar_popup_vacio_reg(){
+        error_registrar.setContentView(R.layout.error_register)
+        btn_popup_close = error_registrar.findViewById(R.id.Btn_close_popup_reg_error)
+        btn_volver = error_registrar.findViewById(R.id.Btn_volver)
+        btn_popup_close.setOnClickListener(View.OnClickListener { error_registrar.dismiss() })
+        btn_volver.setOnClickListener(View.OnClickListener { error_registrar.dismiss() })
+        error_registrar.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        error_registrar.show()
     }
 
     private fun Crear_usuario(){
@@ -122,7 +135,14 @@ class Register_Activity : AppCompatActivity() {
     }
 
     fun Registrar_usuario(view: View){
-        Crear_usuario()
+
+        if(Documento_txt.text.isEmpty() || Nombres_txt.text.isEmpty() || Apellidos_txt.text.isEmpty() || Telefono_txt.text.isEmpty() ||
+            Email_txt.text.isEmpty() || Contraseña_txt.text.isEmpty() || Conf_contraseña_txt.text.isEmpty()  ) {
+            Mostrar_popup_vacio_reg()
+        }
+        else {
+            Crear_usuario()
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -168,6 +188,7 @@ class Register_Activity : AppCompatActivity() {
 
         // POP UPS
         Pop_up_reg_ok = Dialog(this)
+        error_registrar = Dialog(this)
 
         Conf_contraseña_txt.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {

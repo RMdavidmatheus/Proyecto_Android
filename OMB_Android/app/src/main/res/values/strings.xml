@@ -53,4 +53,7 @@
     <string name="registrandose">Registrandose...</string>
     <string name="correcto">Siguiente</string>
     <string name="registro_completado_correctamente">Registro completado satisfactoriamente</string>
+    <string name="error_al_registrarse">Error al registrarse</string>
+    <string name="Vacios">Verifique que los campos no se encuentren vacios</string>
+    <string name="volver">Volver</string>
 </resources>

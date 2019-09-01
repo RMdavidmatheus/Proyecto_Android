@@ -17,7 +17,8 @@
                 android:label="@string/Gestion_label"
                 android:theme="@style/No_barra_titulo">
         </activity>
-        <activity android:name=".Forgot_Activity">
+        <activity android:name=".Forgot_Activity"
+                  android:theme="@style/No_barra_titulo">
         </activity>
         <activity
                 android:name=".Actividad_Main"
